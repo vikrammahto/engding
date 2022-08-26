@@ -1,0 +1,61 @@
+.review-avatar {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -50%;
+    backface-visibility: hidden;
+}
+
+.pricing-card:hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0, .175);
+}
+
+.row-deck>.col,
+.row-deck>[class*=col-] {
+    display: flex;
+    align-items: stretch;
+}
+
+.row-deck>.col .card,
+.row-deck>[class*=col-] .card {
+    flex: 1 1 auto;
+}
+
+.row-cards {
+    --tblr-gutter-x: 1rem;
+    --tblr-gutter-y: 1rem;
+    min-width: 0;
+}
+
+.row-cards .row-cards {
+    flex: 1;
+}
+
+@media (max-width: 991.98px) {
+    .row-cards {
+        --tblr-gutter-x: 0.5rem;
+        --tblr-gutter-y: 0.5rem;
+    }
+}
+
+
+
+/* Filled Material Icons */
+.filled {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.material-symbols-outlined, .material-symbols-rounded{
+    vertical-align: middle;
+}
